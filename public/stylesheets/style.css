@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightblue;
+  text-align: left;
+}
+
+a {
+  color: rgb(0, 116, 10);
+}
+
+label {
+  width: 8%;
+  float: left;
+  clear: both;
+}

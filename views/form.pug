@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    h1 Image form 
+    form(method='post' action='/generate-image')
+        label Image height: 
+        input(type='text' name='height' )
+        br
+        br
+
+        label Image width: 
+        input(type='text' name='width')
+        br
+        br
+
+        label Blur: 
+        input(type='text' name='blur')
+        br
+        br
+
+        label Grayscale: 
+        input(type='checkbox' name='grayscale')
+        br
+        br
+        input(type='submit' value='Submit')
+        br
+        br
+        if image
+            img(src=image)

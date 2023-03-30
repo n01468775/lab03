@@ -1,0 +1,24 @@
+extends layout 
+
+block content
+    h1 QR Form
+    form(method='post' action='/generate-qr-code')
+        label Height: 
+        input(type='text' name='height')
+        br
+        br
+
+        label Width: 
+        input(type='text' name='width')
+        br
+        br
+
+        label Value: 
+        input(type='text' name='value')
+        br
+        br
+        input(type='submit' value='Submit')
+        br
+        br
+        if img
+            img(src=img)
